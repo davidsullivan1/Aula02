@@ -22,8 +22,23 @@ if menu_exercicio == 2:
 quantidadeImplementada += 1;
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+if menu_exercicio == 3:
+    numero1 = int(input("Digite Um Número: "))
+    numero2 = int(input("Digite mais um número"))
+    resultado = numero1*numero2
+    print(f"O Resultado da múltiplicação entre os números fornecidos é: {resultado}")
+
+quantidadeImplementada += 1;
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+if menu_exercicio == 4:
+    numero1 = int(input("Digite Um Número: "))
+    numero2 = int(input("Digite mais um número"))
+    resultado = int(numero1/numero2)
+    print(f"O Resultado da Divisão Inteira entre os números fornecidos é: {resultado}")
+
+quantidadeImplementada += 1;
+
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
 # #### Números de Ponto Flutuante (`float`)
