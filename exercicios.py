@@ -1,16 +1,28 @@
 # #### Inteiros (`int`)
 
+
+menu_exercicio = int(input("Digite o número (Opção de 1 a 25) equivalente ao exercício que deseja Testar: "))
+quantidadeImplementada = 0;
+
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-primeiro_numero = int(input("1 - Digite um número inteiro: "))
-segundo_numero = int(input("2 - Digite Mais um número inteiro: "))
+if menu_exercicio == 1:
+    primeiro_numero = int(input("1 - Digite um número inteiro: "))
+    segundo_numero = int(input("2 - Digite Mais um número inteiro: "))
+    somatorio = primeiro_numero + segundo_numero
+    print(f"A soma dos números inteiros informados é: {somatorio}")
 
-somatorio = primeiro_numero + segundo_numero
-
-print(f"A soma dos números inteiros informados é: {somatorio}")
-
+quantidadeImplementada += 1;
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+if menu_exercicio == 2:
+    numero = float(input("Digite um número: "))
+    divisao = numero%5 #Retorna o resto da divisão 
+    print(f"O resto da divisão de {numero} por 5 é: {divisao}")
+
+quantidadeImplementada += 1;
+
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
@@ -45,3 +57,8 @@ print(f"A soma dos números inteiros informados é: {somatorio}")
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
+
+
+
+if menu_exercicio > quantidadeImplementada:
+    print("Exercício ainda não implementado")
