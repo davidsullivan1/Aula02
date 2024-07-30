@@ -1,43 +1,51 @@
 # #### Inteiros (`int`)
 
+escape = True;
 
-menu_exercicio = int(input("Digite o número (Opção de 1 a 25) equivalente ao exercício que deseja Testar: "))
-quantidadeImplementada = 0;
 
-# 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-if menu_exercicio == 1:
-    primeiro_numero = int(input("1 - Digite um número inteiro: "))
-    segundo_numero = int(input("2 - Digite Mais um número inteiro: "))
-    somatorio = primeiro_numero + segundo_numero
-    print(f"A soma dos números inteiros informados é: {somatorio}")
+while (escape == True):
 
-quantidadeImplementada += 1;
+    menu_exercicio = int(input("Digite o número (Opção de 1 a 25) equivalente ao exercício que deseja Testar: "))
+    quantidadeImplementada = 0;
+    saida = 0;
+    quantidadeTentativasValidas = 5;
 
-# 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-if menu_exercicio == 2:
-    numero = float(input("Digite um número: "))
-    divisao = numero%5 #Retorna o resto da divisão 
-    print(f"O resto da divisão de {numero} por 5 é: {divisao}")
+    # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+    if menu_exercicio == 1:
+        primeiro_numero = int(input("1 - Digite um número inteiro: "))
+        segundo_numero = int(input("2 - Digite Mais um número inteiro: "))
+        somatorio = primeiro_numero + segundo_numero
+        print(f"A soma dos números inteiros informados é: {somatorio}")
 
-quantidadeImplementada += 1;
+    quantidadeImplementada += 1;
 
-# 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
-if menu_exercicio == 3:
-    numero1 = int(input("Digite Um Número: "))
-    numero2 = int(input("Digite mais um número"))
-    resultado = numero1*numero2
-    print(f"O Resultado da múltiplicação entre os números fornecidos é: {resultado}")
+    # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+    if menu_exercicio == 2:
+        numero = float(input("Digite um número: "))
+        divisao = numero%5 #Retorna o resto da divisão 
+        print(f"O resto da divisão de {numero} por 5 é: {divisao}")
 
-quantidadeImplementada += 1;
+    quantidadeImplementada += 1;
 
-# 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-if menu_exercicio == 4:
-    numero1 = int(input("Digite Um Número: "))
-    numero2 = int(input("Digite mais um número"))
-    resultado = int(numero1/numero2)
-    print(f"O Resultado da Divisão Inteira entre os números fornecidos é: {resultado}")
+    # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+    if menu_exercicio == 3:
+        numero1 = int(input("Digite Um Número: "))
+        numero2 = int(input("Digite mais um número"))
+        resultado = numero1*numero2
+        print(f"O Resultado da múltiplicação entre os números fornecidos é: {resultado}")
 
-quantidadeImplementada += 1;
+    quantidadeImplementada += 1;
+
+    # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+    if menu_exercicio == 4:
+        numero1 = int(input("Digite Um Número: "))
+        numero2 = int(input("Digite mais um número"))
+        resultado = int(numero1/numero2)
+        print(f"O Resultado da Divisão Inteira entre os números fornecidos é: {resultado}")
+
+    quantidadeImplementada += 1;
+
+
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
@@ -75,5 +83,31 @@ quantidadeImplementada += 1;
 
 
 
-if menu_exercicio > quantidadeImplementada:
-    print("Exercício ainda não implementado")
+    if menu_exercicio > quantidadeImplementada:
+        print("Exercício ainda não implementado")
+
+
+    while True:
+        if quantidadeTentativasValidas == 5: #Primeira Interação
+            saida = int(input("Digite 99 para sair ou 0 para voltar ao Menu Inicial: "))
+        else:
+            saida = int(input("Opção Inválida, Digite 99 para sair ou 0 para voltar ao Menu Inicial: "))
+
+        if saida == 99:
+            escape = False
+            break
+        elif saida == 00:
+            break
+        elif quantidadeTentativasValidas == 0:
+            break
+        elif saida != 0 & saida != 99:
+            quantidadeTentativasValidas -= 1;
+    
+    if quantidadeTentativasValidas == 0:
+        print("Quantidade de Tentativas esgotadas, Inicie novamente a aplicação")
+        break
+    
+
+    
+
+        
