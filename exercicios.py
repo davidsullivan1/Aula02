@@ -1,4 +1,6 @@
 # #### Inteiros (`int`)
+import math
+
 
 escape = True;
 
@@ -40,7 +42,7 @@ while (escape == True):
     if menu_exercicio == 4:
         numero1 = int(input("Digite Um Número: "))
         numero2 = int(input("Digite mais um número"))
-        resultado = int(numero1/numero2)
+        resultado = int(numero1//numero2)
         print(f"O Resultado da Divisão Inteira entre os números fornecidos é: {resultado}")
 
     quantidadeImplementada += 1;
@@ -48,6 +50,13 @@ while (escape == True):
 
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+    if menu_exercicio == 5:
+        numero1 = int(input("Digite Um Número: "))
+        expoente = int(input("Digite o expoente que deseja que o número fornecido seja elevado: "))
+        resultado = int(numero1**expoente)
+        print(f"O Quadra do número Fornecido é: {resultado}")
+
+    quantidadeImplementada += 1;
 
 # #### Números de Ponto Flutuante (`float`)
 
