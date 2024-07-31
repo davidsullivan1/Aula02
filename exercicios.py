@@ -2,10 +2,7 @@
 import math
 
 
-escape = True;
-
-
-while (escape == True):
+while True:
 
     menu_exercicio = int(input("Digite o número (Opção de 1 a 25) equivalente ao exercício que deseja Testar: "))
     exercicioImplementado = 0;
@@ -46,8 +43,6 @@ while (escape == True):
         print(f"O Resultado da Divisão Inteira entre os números fornecidos é: {resultado}")
 
     exercicioImplementado = menu_exercicio;
-
-
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
     if menu_exercicio == 5:
@@ -122,9 +117,8 @@ while (escape == True):
             saida = int(input("Digite 99 para sair ou 0 para voltar ao Menu Inicial: "))
         else:
             saida = int(input("Opção Inválida, Digite 99 para sair ou 0 para voltar ao Menu Inicial: "))
-
         if saida == 99:
-            escape = False
+            False
             break
         elif saida == 00:
             break
