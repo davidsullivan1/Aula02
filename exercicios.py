@@ -54,14 +54,30 @@ while (escape == True):
         numero1 = int(input("Digite Um Número: "))
         expoente = int(input("Digite o expoente que deseja que o número fornecido seja elevado: "))
         resultado = int(numero1**expoente)
-        print(f"O Quadra do número Fornecido é: {resultado}")
+        print(f"O Resultado de {numero1} elevado à {expoente} é: {resultado}")
 
     quantidadeImplementada += 1;
 
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+    if menu_exercicio == 6:
+        numero1 = float(input("Digite Um Número de Decimal: "))
+        numero2 = float(input("Digite o Segundo Número Decimal: "))
+        resultado = numero1 + numero2;
+        print(f"A Soma dos números decimais é: {resultado}")
+
+    quantidadeImplementada += 1;
+
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+    if menu_exercicio == 7:
+        numero1 = float(input("Digite Um Número de Decimal: "))
+        numero2 = float(input("Digite o Segundo Número Decimal: "))
+        resultado = float(numero1 + numero2);
+        print(f"A Soma dos números decimais é: {resultado:_.2f}")
+
+    quantidadeImplementada += 1;
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
