@@ -8,7 +8,7 @@ escape = True;
 while (escape == True):
 
     menu_exercicio = int(input("Digite o número (Opção de 1 a 25) equivalente ao exercício que deseja Testar: "))
-    quantidadeImplementada = 0;
+    exercicioImplementado = 0;
     saida = 0;
     quantidadeTentativasValidas = 5;
 
@@ -19,7 +19,7 @@ while (escape == True):
         somatorio = primeiro_numero + segundo_numero
         print(f"A soma dos números inteiros informados é: {somatorio}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
     # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
     if menu_exercicio == 2:
@@ -27,7 +27,7 @@ while (escape == True):
         divisao = numero%5 #Retorna o resto da divisão 
         print(f"O resto da divisão de {numero} por 5 é: {divisao}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
     # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
     if menu_exercicio == 3:
@@ -36,7 +36,7 @@ while (escape == True):
         resultado = numero1*numero2
         print(f"O Resultado da múltiplicação entre os números fornecidos é: {resultado}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
     # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
     if menu_exercicio == 4:
@@ -45,7 +45,7 @@ while (escape == True):
         resultado = int(numero1//numero2)
         print(f"O Resultado da Divisão Inteira entre os números fornecidos é: {resultado}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
 
 
@@ -56,7 +56,7 @@ while (escape == True):
         resultado = int(numero1**expoente)
         print(f"O Resultado de {numero1} elevado à {expoente} é: {resultado}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
 # #### Números de Ponto Flutuante (`float`)
 
@@ -67,7 +67,7 @@ while (escape == True):
         resultado = numero1 + numero2;
         print(f"A Soma dos números decimais é: {resultado}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
     if menu_exercicio == 7:
@@ -76,12 +76,17 @@ while (escape == True):
         resultado = float(numero1 + numero2);
         print(f"A Soma dos números decimais é: {resultado:_.2f}")
 
-    quantidadeImplementada += 1;
+    exercicioImplementado = menu_exercicio;
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+    if menu_exercicio == 10:
+        raio = float(input("Informe o Raio de um Círculo: "))
+        areaCirculo = math.pi*(raio**2)
+        print(f"A área do Círculo de Raio tamanho {raio} é de: {areaCirculo:_.2f}")
 
+    exercicioImplementado = menu_exercicio;
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
@@ -108,7 +113,7 @@ while (escape == True):
 
 
 
-    if menu_exercicio > quantidadeImplementada:
+    if menu_exercicio > exercicioImplementado:
         print("Exercício ainda não implementado")
 
 
